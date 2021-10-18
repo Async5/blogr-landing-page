@@ -1,0 +1,30 @@
+// Colors
+
+// Primary
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$grayish-blue: hsl(240, 2%, 79%);
+$very-dark-grayish-blue: hsl(207, 13%, 34%);
+$very-dark-black-blue: hsl(240, 10%, 16%);
+
+// Gradient
+$very-light-red-gradient: hsl(13, 100%, 72%);
+$light-red-gradient: hsl(353, 100%, 62%);
+
+$very-dark-gray-blue: hsl(237, 17%, 21%);
+$very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+// typography
+$ubuntu: 'Ubuntu', sans-serif;
+$overpass: 'Overpass', sans-serif;
+
+$breakpoints: (
+  'sm': 36rem,
+  'md': 59.375rem,
+  'lg': 68.75rem,
+  'xl': 90rem,
+);

@@ -1,0 +1,29 @@
+.intro {
+  min-height: 37.5rem;
+  background: url('../../app/images/bg-pattern-intro.svg') no-repeat 24% 52% /
+      cover,
+    linear-gradient(to left, $light-red-gradient, $very-light-red-gradient)
+      no-repeat center center/cover;
+  background-size: 200%;
+  border-bottom-left-radius: 6.25rem;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1rem;
+
+    @include breakpoint-down('md') {
+      font-size: 2.3rem;
+    }
+  }
+
+  p {
+    margin-bottom: 2.1rem;
+    font-size: 1.3rem;
+  }
+
+  &__buttons {
+    .button:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

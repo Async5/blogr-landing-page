@@ -1,0 +1,114 @@
+.state {
+  background: url('../../app/images/bg-pattern-circles.svg'),
+    linear-gradient(300deg, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+  background-size: 600px, cover;
+  background-position: center top -228px, center center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include breakpoint-up('lg') {
+    background: linear-gradient(300deg, hsl(237, 23%, 32%), hsl(237, 17%, 21%));
+  }
+  margin-top: 40%;
+
+  @include breakpoint-down('sm') {
+    margin-top: 55%;
+  }
+
+  @include breakpoint-up('lg') {
+    margin-top: unset;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+  }
+
+  border-top-right-radius: 3.125rem;
+  border-bottom-left-radius: 3.125rem;
+
+  .circle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-top-right-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+
+    @include breakpoint-down('lg') {
+      display: none;
+    }
+
+    .circle-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .circle {
+        img {
+          position: relative;
+          top: -54%;
+          left: -29%;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include breakpoint-up('lg') {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .phones {
+      margin-bottom: -62%;
+      @include breakpoint-down('sm') {
+        margin-bottom: -46%;
+      }
+
+      @include breakpoint-up('lg') {
+        margin-bottom: unset;
+        position: absolute;
+        top: -120%;
+        left: 3%;
+      }
+
+      img {
+        @include breakpoint-down('lg') {
+          width: 100%;
+          transform: translateY(-46%) scale(0.7);
+        }
+        @include breakpoint-down('sm') {
+          transform: translateY(-46%) scale(1);
+        }
+      }
+    }
+
+    .text {
+      @include breakpoint-down('lg') {
+        text-align: center;
+        padding-bottom: 6.25rem;
+      }
+
+      @include breakpoint-up('lg') {
+        grid-area: 2 / -2 / -2 / -1;
+      }
+
+      h2 {
+        margin-bottom: 1.2rem;
+      }
+
+      p {
+        line-height: 1.8;
+        color: $grayish-blue;
+
+        @include breakpoint-down('lg') {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./app/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header class="header wrapper">
+      <div class="container-all flex flex-jc-sb flex-ai-c">
+        <nav class="flex flex-jc-sb flex-ai-c">
+          <a href="#" class="logo flex flex-ai-c">
+            <img src="./app/images/logo.svg" alt="logo" />
+          </a>
+
+          <div class="links flex flex-jc-sb flex-ai-c hide-for-mobile">
+            <div class="links__item">
+              <span>Product</span>
+              <img src="./app/images/icon-arrow-light.svg" alt="arrow" />
+
+              <div class="dropdown">
+                <a class="dropdown__item" href="#">Overview</a>
+                <a class="dropdown__item" href="#">Pricing</a>
+                <a class="dropdown__item" href="#">Marketplace</a>
+                <a class="dropdown__item" href="#">Features</a>
+                <a class="dropdown__item" href="#">Integrations</a>
+              </div>
+            </div>
+            <div class="links__item">
+              <span>Company</span>
+              <img src="./app/images/icon-arrow-light.svg" alt="arrow" />
+
+              <div class="dropdown">
+                <a class="dropdown__item" href="#">About</a>
+                <a class="dropdown__item" href="#">Team</a>
+                <a class="dropdown__item" href="#">Blog</a>
+                <a class="dropdown__item" href="#">Careers</a>
+              </div>
+            </div>
+            <div class="links__item">
+              <span>Connect</span>
+              <img src="./app/images/icon-arrow-light.svg" alt="arrow" />
+
+              <div class="dropdown">
+                <a class="dropdown__item" href="#">Contact</a>
+                <a class="dropdown__item" href="#">Newsletter</a>
+                <a class="dropdown__item" href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="flex flex-jc-sb flex-ai-c hide-for-mobile">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+
+        <div class="hamburger flex flex-fd-c flex-jc-sb hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="accordion">
+          <!-- item #1 -->
+          <div class="accordion__item">
+            <div class="accordion__item-headline flex flex-ai-c flex-jc-c">
+              <span>Products</span>
+              <img src="./app/images/icon-arrow-dark.svg" alt="" />
+            </div>
+            <div class="accordion__collapse collapse">
+              <div
+                class="accordion__item-body flex flex-fd-c flex-jc-c flex-ai-c"
+              >
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">Integrations</a>
+              </div>
+            </div>
+          </div>
+          <!-- item #2 -->
+          <div class="accordion__item">
+            <div class="accordion__item-headline flex flex-ai-c flex-jc-c">
+              <span>Company</span>
+              <img src="./app/images/icon-arrow-dark.svg" alt="" />
+            </div>
+            <div class="accordion__collapse collapse">
+              <div
+                class="accordion__item-body flex flex-fd-c flex-jc-c flex-ai-c"
+              >
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+          </div>
+          <!-- item #3 -->
+          <div class="accordion__item">
+            <div class="accordion__item-headline flex flex-ai-c flex-jc-c">
+              <span>Connect</span>
+              <img src="./app/images/icon-arrow-dark.svg" alt="" />
+            </div>
+            <div class="accordion__collapse collapse">
+              <div
+                class="accordion__item-body flex flex-fd-c flex-jc-c flex-ai-c"
+              >
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons flex flex-fd-c flex-jc-c flex-ai-c">
+          <a class="underline-anim" href="#">Login</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro grid grid-pc-c container-all">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="intro__buttons flex flex-ai-c flex-jc-c">
+          <a href="#" class="button">Start for Free</a>
+          <a href="#" class="button button-outline">Learn More</a>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="wrapper container-all">
+          <h2>Designed for the future</h2>
+          <div class="content">
+            <div class="image">
+              <img
+                class="hide-for-mobile"
+                src="./app/images/illustration-editor-desktop.svg"
+                alt="desktop-image"
+              />
+              <img
+                class="hide-for-desktop"
+                src="./app/images/illustration-editor-mobile.svg"
+                alt="desktop-image"
+              />
+            </div>
+            <div class="text">
+              <div>
+                <h3>Introducing an extensible editor</h3>
+                <p>
+                  Introducing an extensible editor Blogr features an exceedingly
+                  intuitive interface which lets you focus on one thing:
+                  creating content. The editor supports management of multiple
+                  blogs and allows easy manipulation of embeds such as images,
+                  videos, and Markdown. Extensibility with plugins and themes
+                  provide easy ways to add functionality or change the looks of
+                  a blog.
+                </p>
+              </div>
+              <div>
+                <h3>Robust content management</h3>
+                <p>
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you’re in full control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="state">
+        <div class="circle-container">
+          <div class="circle-grid wrapper">
+            <div class="circle">
+              <img src="./app/images/bg-pattern-circles.svg" alt="circle" />
+            </div>
+          </div>
+        </div>
+        <div class="content wrapper">
+          <div class="phones">
+            <img src="./app/images/illustration-phones.svg" alt="phones" />
+          </div>
+          <div class="text">
+            <h2>State of the Art Infrastructure</h2>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature laptop">
+        <div class="wrapper container-all">
+          <div class="content laptop">
+            <div class="image laptop">
+              <img
+                class="hide-for-mobile"
+                src="./app/images/illustration-laptop-desktop.svg"
+                alt="desktop-image"
+              />
+              <img
+                class="hide-for-desktop"
+                src="./app/images/illustration-laptop-mobile.svg"
+                alt="desktop-image"
+              />
+            </div>
+            <div class="text laptop">
+              <div>
+                <h3>Free, open, simple</h3>
+                <p>
+                  Blogr is a free and open source application backed by a large
+                  community of helpful developers. It supports features such as
+                  code syntax highlighting, RSS feeds, social media integration,
+                  third-party commenting tools, and works seamlessly with Google
+                  Analytics. The architecture is clean and is relatively easy to
+                  learn.
+                </p>
+              </div>
+              <div>
+                <h3>Powerful tooling</h3>
+                <p>
+                  Batteries included. We built a simple and straightforward CLI
+                  tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__grid wrapper container-x">
+        <div class="logo footer__grid-item">
+          <img src="./app/images/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__grid-item">
+          <h4>Product</h4>
+          <a href="#"><span>Overview</span></a>
+          <a href="#"><span>Pricing</span></a>
+          <a href="#"><span>Marketplace</span></a>
+          <a href="#"><span>Features</span></a>
+          <a href="#"><span>Integrations</span></a>
+        </div>
+        <div class="footer__grid-item">
+          <h4>Company</h4>
+          <a href="#"><span>About</span></a>
+          <a href="#"><span>Team</span></a>
+          <a href="#"><span>Blog</span></a>
+          <a href="#"><span>Careers</span></a>
+        </div>
+        <div class="footer__grid-item">
+          <h4>Connect</h4>
+          <a href="#"><span>Team</span></a>
+          <a href="#"><span>Newsletter</span></a>
+          <a href="#"><span>LinkedIn</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Emre Cakir</a>.
+    </div>
+
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

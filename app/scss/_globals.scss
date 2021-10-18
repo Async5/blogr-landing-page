@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $overpass;
+  color: $white;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.wrapper {
+  max-width: map-get($breakpoints, 'xl');
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  &-all {
+    padding: 3rem;
+
+    @include breakpoint-down('md') {
+      padding: 3.125rem 1.3125rem;
+    }
+  }
+
+  &-x {
+    padding: 0 3.75rem;
+
+    @include breakpoint-down('md') {
+      padding: 0 1.3125rem;
+    }
+  }
+
+  &-y {
+    padding: 3rem 0;
+  }
+
+  &-r {
+    padding: 0 3.75rem 0 0;
+  }
+
+  &-l {
+    padding: 0 0 0 3.75rem;
+
+    @include breakpoint-down('md') {
+      padding: 0 0 0 1.3125rem;
+    }
+  }
+
+  &-t {
+    padding: 3rem 0 0 0;
+  }
+
+  &-b {
+    padding: 0 0 3rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.grid {
+  display: grid;
+
+  &-pc-c {
+    place-content: center;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 8.6875rem;
+  height: 3.0625rem;
+  background-color: $white;
+  color: $light-red;
+  border-radius: 6.25rem;
+  font-weight: bold;
+  font-family: $ubuntu;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: $very-light-red;
+    color: white;
+  }
+
+  &-outline {
+    border: 1px solid white;
+    color: $white;
+    background: none;
+
+    &:hover {
+      background-color: white;
+      color: $light-red;
+    }
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down('md') {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up('md') {
+    display: none;
+  }
+}
+
+.collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease-in-out;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
